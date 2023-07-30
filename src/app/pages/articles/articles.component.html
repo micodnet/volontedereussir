@@ -1,0 +1,15 @@
+
+<section id="text" *ngFor="let item of model">
+    <h1>{{item.title}}</h1>
+    <p>{{item.content}}</p>
+</section>
+<!-- <form [formGroup]=fg" (ngSubmit)="save()">
+  <ng-card>
+    <ng-card-body>
+      <input type="text" ngInput placeholder="Articles title" formControlName="name">
+    </ng-card-body>
+    <ng-card-footer>
+      <input type="submit" ngButton value="Save" status="Info" [disable]="fg.invalid">
+    </ng-card-footer>
+  </ng-card>
+</form> -->

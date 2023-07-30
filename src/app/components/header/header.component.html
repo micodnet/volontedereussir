@@ -1,0 +1,16 @@
+<header>
+   <h1>Volontedereussir</h1>
+  <span class="card flex justify-content-left">
+    <p-slideMenu #menu [model]="items" [popup]="true" [viewportHeight]="250" [menuWidth]="175">
+      <nav>
+        <ul>
+          <li label="Home"><a routerLink="/home" routerLinkActive="active">Accueil</a></li>
+          <li label="About"><a routerLink="/about" routerLinkActive="active">A propos</a></li>
+          <li label="Articles"><a routerLink="/articles" routerLinkActive="active">Articles</a></li>
+          <li label="Liens"><a routerLink="/liens" routerLinkActive="active">Liens</a></li>
+        </ul>
+      </nav>
+    </p-slideMenu>
+  </span>
+  <button id="B.Menu" type="button" class="liste" pButton icon="pi pi-bars" label="Menu" (click)="menu.toggle($event)" title="Ouvrir le menu"></button>
+</header>
